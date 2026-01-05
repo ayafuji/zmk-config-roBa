@@ -28,34 +28,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -112,10 +85,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W         &kp E         &kp R                        &kp T                                           &kp Y        &kp U  &lt 0 I    &kp O    &kp P
-&mt LCTRL A  &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))       &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&kp Z        &kp X         &kp C         &kp V                        &kp B        &kp TAB             &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL    &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 INT_HENKAN  &lt 1 SPACE  &kp LEFT_SHIFT      &kp BACKSPACE  &lt 2 ENTER                             &lt 4 ESC
+&kp Q      &kp W         &kp E         &kp R                        &kp T                                           &kp Y        &kp U  &lt 0 I    &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))       &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&kp Z      &kp X         &kp C         &kp V                        &kp B        &kp TAB             &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 INT_HENKAN  &lt 1 SPACE  &kp LEFT_SHIFT      &kp BACKSPACE  &lt 2 ENTER                             &lt 4 ESC
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -161,10 +134,10 @@
 
         blender {
             bindings = <
-&trans  &alt1   &alt2   &alt3   &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp SPACE  &alt1   &alt2   &alt3   &kp TAB                        &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &kp LC(S)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans     &trans      &trans  &trans                          &trans
             >;
         };
     };
