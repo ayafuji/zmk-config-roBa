@@ -2,14 +2,6 @@
 #include <physical_layouts.dtsi>
 
 
-&zip_temp_layer {
-    excluded-positions = <
-        18 // J
-        19 // K
-        20 // L
-    >;
-};
-
 / {
     chosen {
         zmk,physical-layout = &roba_physical_layout;
@@ -124,9 +116,6 @@
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
-        device = <&trackball>;
-
-        input-processors = <&zip_temp_layer 3 10000>;
     };
 };
 
