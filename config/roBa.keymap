@@ -5,9 +5,7 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 3 10000>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 3 10000>; };
 
 &mt {
     flavor = "balanced";
@@ -16,7 +14,6 @@
 
 &trackball {
     //automouse-layer = <3>;
-
     //scroll-layers = <5>;
     // arrows {
     //     layers = <3>;
@@ -102,7 +99,7 @@
             bindings = <
 &kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
             >;
         };
@@ -138,10 +135,10 @@
 
         blender {
             bindings = <
-&kp SPACE  &alt1   &alt2   &alt3   &kp TAB                        &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans  &kp LC(S)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans  &trans     &trans      &trans  &trans                          &trans
+&kp SPACE  &alt1                &alt2                &alt3                &kp TAB                        &trans  &trans  &trans  &trans  &trans
+&trans     &kp KP_N1            &kp KP_NUMBER_3      &kp KP_NUMBER_7      &kp LC(S)  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp LC(KP_NUMBER_1)  &kp LC(KP_NUMBER_3)  &kp LC(KP_NUMBER_7)  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans               &trans               &trans               &trans     &trans      &trans  &trans                          &trans
             >;
         };
     };
