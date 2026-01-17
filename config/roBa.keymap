@@ -135,10 +135,10 @@
 
         blender {
             bindings = <
-&kp SPACE  &alt1                &alt2                &alt3                &kp TAB                         &trans  &trans  &trans  &trans  &trans
-&kp LS(C)  &kp KP_N1            &kp KP_NUMBER_3      &kp KP_NUMBER_7      &kp LC(S)   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp LC(KP_NUMBER_1)  &kp LC(KP_NUMBER_3)  &kp LC(KP_NUMBER_7)  &kp KP_DOT  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans               &trans               &trans               &trans      &trans      &trans  &trans                          &trans
+&kp SPACE  &alt1                &alt2                &alt3                &kp LC(S)                                    &trans  &trans  &trans  &trans  &trans
+&kp LS(C)  &kp KP_N1            &kp KP_NUMBER_3      &kp KP_NUMBER_7      &kp LC(RC(KP_NUMBER_5))  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp LC(KP_NUMBER_1)  &kp LC(KP_NUMBER_3)  &kp LC(KP_NUMBER_7)  &kp KP_DOT               &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans               &trans               &trans               &trans                   &trans      &trans  &trans                          &trans
             >;
         };
     };
