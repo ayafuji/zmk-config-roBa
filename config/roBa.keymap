@@ -138,7 +138,7 @@
 
         blender {
             bindings = <
-&kp SPACE  &alt1                &alt2                &alt3                &kp LC(S)                                &kp LS(MINUS)       &kp LS(EQUAL)        &kp LC(D)  &kp LS(LC(D))  &trans
+&kp SPACE  &alt1                &alt2                &alt3                &kp LC(S)                                &kp LS(MINUS)       &kp LS(RS(EQUAL))    &kp LC(D)  &kp LS(LC(D))  &trans
 &kp LS(C)  &kp KP_N1            &kp KP_NUMBER_3      &kp KP_NUMBER_7      &kp KP_NUMBER_5  &trans      &kp COMMA   &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(L)  &trans         &trans
 &kp KP_N0  &kp LC(KP_NUMBER_1)  &kp LC(KP_NUMBER_3)  &kp LC(KP_NUMBER_7)  &kp KP_DOT       &trans      &kp PERIOD  &trans              &trans               &trans     &trans         &trans
 &trans     &trans               &trans               &trans               &trans           &trans      &trans      &trans                                                             &trans
