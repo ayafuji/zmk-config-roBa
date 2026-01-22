@@ -78,8 +78,8 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             //bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            bindings = <&msc MOVE_Y(-100)>, <&msc MOVE_Y(100)>;
-            tap-ms = <15>;
+            bindings = <&msc MOVE_Y(-200)>, <&msc MOVE_Y(200)>;
+            tap-ms = <20>;
         };
     };
 
