@@ -75,8 +75,8 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
+            //bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            bindings = <&msc SCRL_DOWN_VEL(20)>, <&msc SCRL_UP_VEL(20)>;
             tap-ms = <20>;
         };
     };
