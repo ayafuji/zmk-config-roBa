@@ -97,10 +97,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&kp KP_MINUS                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp KP_SLASH                &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&trans                      &trans           &trans           &trans           &trans           &trans                       &trans          &trans                                                                     &kp PIPE
             >;
         };
 
@@ -135,10 +135,10 @@
 
         blender {
             bindings = <
-&kp SPACE  &alt1                &alt2                &alt3                &kp LC(S)                            &trans  &trans  &trans  &trans  &trans
-&kp LS(C)  &kp KP_N1            &kp KP_NUMBER_3      &kp KP_NUMBER_7      &kp KP_NUMBER_5  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp KP_N0  &kp LC(KP_NUMBER_1)  &kp LC(KP_NUMBER_3)  &kp LC(KP_NUMBER_7)  &kp KP_DOT       &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans               &trans               &trans               &trans           &trans      &trans  &trans                          &trans
+&kp SPACE  &alt1                &alt2                &alt3                &kp LC(S)                                &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans     &trans  &trans
+&kp LS(C)  &kp KP_N1            &kp KP_NUMBER_3      &kp KP_NUMBER_7      &kp KP_NUMBER_5  &trans      &kp COMMA   &trans           &trans             &kp LC(L)  &trans  &trans
+&kp KP_N0  &kp LC(KP_NUMBER_1)  &kp LC(KP_NUMBER_3)  &kp LC(KP_NUMBER_7)  &kp KP_DOT       &trans      &kp PERIOD  &trans           &trans             &trans     &trans  &trans
+&trans     &trans               &trans               &trans               &trans           &trans      &trans      &trans                                                 &trans
             >;
         };
     };
