@@ -1,11 +1,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-
-
 #include <dt-bindings/zmk/pointing.h>
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 3 10000>; };
 
@@ -77,8 +75,11 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
+
             //bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             bindings = <&msc MOVE_Y(-75)>, <&msc MOVE_Y(75)>;
+
             tap-ms = <20>;
         };
     };
@@ -137,10 +138,10 @@
 
         blender {
             bindings = <
-&kp SPACE  &alt1                &alt2                &alt3                &kp LC(S)                                &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans     &trans  &trans
-&kp LS(C)  &kp KP_N1            &kp KP_NUMBER_3      &kp KP_NUMBER_7      &kp KP_NUMBER_5  &trans      &kp COMMA   &trans           &trans             &kp LC(L)  &trans  &trans
-&kp KP_N0  &kp LC(KP_NUMBER_1)  &kp LC(KP_NUMBER_3)  &kp LC(KP_NUMBER_7)  &kp KP_DOT       &trans      &kp PERIOD  &trans           &trans             &trans     &trans  &trans
-&trans     &trans               &trans               &trans               &trans           &trans      &trans      &trans                                                 &trans
+&kp SPACE  &alt1                &alt2                &alt3                &kp LC(S)                                &kp LS(MINUS)       &kp LS(EQUAL)        &kp LC(D)  &kp LS(LC(D))  &trans
+&kp LS(C)  &kp KP_N1            &kp KP_NUMBER_3      &kp KP_NUMBER_7      &kp KP_NUMBER_5  &trans      &kp COMMA   &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(L)  &trans         &trans
+&kp KP_N0  &kp LC(KP_NUMBER_1)  &kp LC(KP_NUMBER_3)  &kp LC(KP_NUMBER_7)  &kp KP_DOT       &trans      &kp PERIOD  &trans              &trans               &trans     &trans         &trans
+&trans     &trans               &trans               &trans               &trans           &trans      &trans      &trans                                                             &trans
             >;
         };
     };
