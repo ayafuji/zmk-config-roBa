@@ -59,6 +59,20 @@
             bindings = <&kp LA(NUMBER_3)>;
             label = "ALT3";
         };
+
+        JumpDektopNext: JumpDektopNext {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(RIGHT_ARROW))>;
+            label = "JUMPDEKTOPNEXT";
+        };
+
+        JumpDesktopPrev: JumpDesktopPrev {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LEFT_ARROW))>;
+            label = "JUMPDESKTOPPREV";
+        };
     };
 
     behaviors {
@@ -109,10 +123,10 @@
 
         ARROW {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &trans                      &trans  &trans          &kp UP_ARROW    &trans           &trans
-&kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans      &trans  &trans  &trans          &trans          &trans           &trans
-&trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans                                                   &trans
+&kp F1  &kp F2   &kp F3   &kp F4   &trans                      &trans  &trans          &kp UP_ARROW    &JumpDesktopPrev  &JumpDektopNext
+&kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &trans
+&kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans      &trans  &trans  &trans          &trans          &trans            &trans
+&trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans                                                    &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
