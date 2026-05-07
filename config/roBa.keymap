@@ -95,7 +95,7 @@
             //tap-ms = <20>;
 
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <40>;
+            tap-ms = <60>;
         };
     };
 
