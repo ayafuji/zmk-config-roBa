@@ -96,7 +96,7 @@
 
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
             //bindings = <&msc MOVE_Y(-8)>, <&msc MOVE_Y(8)>;
-            tap-ms = <45>;
+            tap-ms = <35>;
         };
     };
 
